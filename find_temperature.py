@@ -17,7 +17,7 @@ class Temperature:
         url = self.base_url + self.country + "/" + self.city
         return url
 
-    def _scrape(self):
+    def _scrape_info(self):
 
         url = self._build_url()
         extractor = Extractor.from_yaml_file(self.yml_path)
@@ -28,7 +28,7 @@ class Temperature:
 
     def get(self):
 
-        scraped_content = self._scrape()
+        scraped_content = self._scrape_info()
         return float(scraped_content['temp'].replace("°F", "").strip())
 
 
