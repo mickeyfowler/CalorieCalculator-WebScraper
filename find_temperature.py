@@ -5,7 +5,7 @@ import requests
 class Temperature:
 
     base_url = 'https://www.timeanddate.com/weather/'
-    yml_path = 'temperature.yaml'
+    yml_path = 'temperature_xpath.yaml'
 
     def __init__(self, country, city):
         self.country = country.replace(" ", "-")
