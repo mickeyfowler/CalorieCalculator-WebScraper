@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="static/main.css">
 </head>
 <body>
-<h2>Calories Calculation Form</h2>
-<p>Fill in the form and click the button to know how many calories you need!</p>
+<h2>Daily Calories Calculation Form</h2>
+<p>Please fill in the form and click the submit button to know how many calories you need today.</p>
 <form action="/calories_form" method="post">
-    <p>Let's get some info about you first.</p>
+    <p>Please enter the following information.</p>
     {{caloriesform.weight.label}} {{caloriesform.weight}}
     <br>
     {{caloriesform.height.label}} {{caloriesform.height}}
@@ -17,7 +17,7 @@
     {{caloriesform.age.label}} {{caloriesform.age}}
     <br>
     <hr>
-    <p>Today's weather counts too. <br> Tell us where you are so we include today's temperature into the calculations.</p>
+    <p>Today's weather is counted too.</p>
     {{caloriesform.city.label}} {{caloriesform.city}}
     <br>
     {{caloriesform.country.label}} {{caloriesform.country}}
